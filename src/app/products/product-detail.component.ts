@@ -17,4 +17,8 @@ export class ProductDetailComponent implements OnInit {
         const id = Number(this.route.snapshot.paramMap.get('id'));
         this.pageTitle += `: ${id}`;
     }
+
+    onBack(): void{
+        this.router.navigate(['/products']);
+    }
 }
